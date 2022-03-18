@@ -1,0 +1,3 @@
+//7. Qué hace la instrucción Console.WriteLine("100".Length); ?
+Console.WriteLine("100".Length);
+//Imprime la cantidad de digitos que contiene el número, en este caso imprime 3 porque el 100 contiene 3 números.
