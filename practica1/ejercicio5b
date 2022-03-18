@@ -1,0 +1,29 @@
+/*
+5. Idem. al ejercicio anterior salvo que se imprimirá un mensaje de saludo diferente 
+según sea el nombre ingresado por el usuario. Así para “Juan” debe imprimir “¡Hola amigo!”,
+para “María” debe imprimir “Buen día señora”, para “Alberto” debe imprimir “Hola Alberto”.
+En otro caso, debe imprimir “Buen día ” seguido del nombre ingresado o “¡Buen día mundo!” 
+si se ha ingresado una línea vacía.
+b) utilizando switch
+*/
+Console.WriteLine("Ejercicio 5 b) \n");
+Console.WriteLine("Ingrese su nombre");
+String nombre02 =Console.ReadLine();
+switch (nombre02){
+  case "Juan":
+  Console.WriteLine("¡Hola amigo!");
+  break;
+  case "María":
+   Console.WriteLine("Buen día señora");
+  break;
+  case "Alberto":
+    Console.WriteLine("Hola Alberto");
+  break;
+  case "":
+   Console.WriteLine("¡Buen día mundo!");
+   break;
+  default:
+     Console.WriteLine("Buen día " + nombre02);
+     break;
+}
+Console.WriteLine("\n");
