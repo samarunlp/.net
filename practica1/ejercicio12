@@ -1,0 +1,4 @@
+/*
+12. Escribir un programa que imprima todos los divisores de un número entero ingresado 
+desde la consola. Para obtener el entero desde un string st utilizar int.Parse(st).
+*/
