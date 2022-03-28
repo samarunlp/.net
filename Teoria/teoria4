@@ -25,9 +25,29 @@ class Auto{
 
 }
 
+
+
+
+
+
+
 //En el programa.cs poner
 using Teoria4;
+//trabajamos con la clase auto, dos tipos a y b
 
+//Auto a
 Auto a;
+a = new Auto("Nissan", 2017);
+//a.Marca= "Nissan"; si fuera publica
+/* Como se imprime si no se hace un metodo de instancia 
+Console.WriteLine($"Auto {a.Marca} {a.Modelo}");
+*/
+Console.WriteLine(a.GetDescripcion());
+
+//Auto b
+Auto b =new Auto("Ford",2015);
+Console.WriteLine(b.GetDescripcion());
+
 a = new Auto();
-Console.WriteLine(a);
+Console.WriteLine(a.GetDescripcion());
+
