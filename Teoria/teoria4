@@ -1,7 +1,27 @@
 //Crear una carpeta "teoria4", crear un nuevo archivo "Auto.cs" y ṕoner
 namespace Teoria4;
-
 class Auto{
+/*las variables que se declaran son privadas por defecto, no puedo utilizarlas mediante "a."
+ en le programa */
+//  public string? Marca; //signo para aceptar el nulo y si la quiero dejar publica
+  private string? _marca;
+  private int _modelo;
+
+//constructor
+  public Auto(string marca, int modelo)
+  {
+     _marca = marca;
+     _modelo = modelo;
+  }
+//método
+/*Hace lo mismo pero es otra forma de hacerlo
+ public string GetDescripcion(){ 
+     return $"Auto {_marca} {_modelo}";
+ }
+*/
+  public string GetDescripcion() =>
+      $"Auto {_marca} {_modelo}";
+
 
 }
 
