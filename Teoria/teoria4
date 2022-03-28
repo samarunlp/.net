@@ -66,7 +66,7 @@ Auto b =new Auto("Ford",2015);
 Console.WriteLine(b.GetDescripcion());
 
 //Auto a, gracias al constructor sin parametros puedo definir ese tipo
-a = new Auto(); //utilizando el constructor 2
-a1 = new Auto("Renault"); //utlizando el constructor 3
+Auto c = new Auto(); //utilizando el constructor 2
+Auto d = new Auto("Renault"); //utlizando el constructor 3
 Console.WriteLine(a.GetDescripcion());
 
