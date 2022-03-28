@@ -8,12 +8,28 @@ class Auto{
   private string? _marca;
   private int _modelo;
 
-//constructor
+//sobrecarga de constructores
+//constructor 1
   public Auto(string marca, int modelo)
   {
      _marca = marca;
      _modelo = modelo;
   }
+  
+ //constructor 2
+   public Auto()
+  {
+     _marca = "Fiat";
+     _modelo = DateTime.Now.Year;
+  }
+  
+  //constructor 3
+  //utilizando el this puedo llamar(invoco) al constructor sin parametros
+   public Auto(string marca) :this()
+  {
+     _marca = marca;
+  }
+  
 //método
 /*Hace lo mismo pero es otra forma de hacerlo
  public string GetDescripcion(){ 
@@ -49,6 +65,8 @@ Console.WriteLine(a.GetDescripcion());
 Auto b =new Auto("Ford",2015);
 Console.WriteLine(b.GetDescripcion());
 
-a = new Auto();
+//Auto a, gracias al constructor sin parametros puedo definir ese tipo
+a = new Auto(); //utilizando el constructor 2
+a1 = new Auto("Renault"); //utlizando el constructor 3
 Console.WriteLine(a.GetDescripcion());
 
