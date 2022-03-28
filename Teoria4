@@ -1,1 +1,13 @@
+//Crear una carpeta "teoria4", crear un nuevo archivo "Auto.cs" y ṕoner
+namespace Teoria4;
 
+class Auto{
+
+}
+
+//En el programa.cs poner
+using Teoria4;
+
+Auto a;
+a = new Auto();
+Console.WriteLine(a);
