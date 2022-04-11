@@ -13,6 +13,11 @@ class Colectivo
 class Colectivo: Automotor
 {
     public int CantPasajeros;
+    //va tener su propia propiedad
+    public override int Modelo{
+      protected set=>
+        base.Modelo = (value < 2015) ? 2015 :value;
+   }
 //public Colectivo():base(marca, modelo);
     public Colectivo(String marca, int modelo, int cantPasajeros): base (marca, modelo){
         this.CantPasajeros = cantPasajeros;
