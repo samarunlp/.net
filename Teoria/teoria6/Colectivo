@@ -1,0 +1,10 @@
+namespace Teoria6;
+
+class Colectivo
+{
+   public string Marca = "";
+   public int Modelo;
+   public int CantPasajeros;
+   public void Imprimir()
+       => Console.WriteLine($"{Marca} {Modelo}");
+}
