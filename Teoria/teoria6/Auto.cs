@@ -10,4 +10,8 @@ class Auto: Automotor
        => Console.WriteLine($"{Marca} {Modelo}");*/
        
   public TipoAuto Tipo;
+  //public Auto():base(marca, modelo); lo q hace el compilador para que no se rompa al poner public Auto:Automotor
+   public Auto(String marca, int modelo, TipoAuto tipoAuto): base(marca, modelo){
+         this.Tipo = tipoAuto;
+     }
 }
