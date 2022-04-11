@@ -8,9 +8,8 @@ a.Modelo = 2000;
 c.Marca = "Mercedes";
 c.Modelo = 2010;
 c.CantPasajeros = 20;
-a.Tipo = TipoAuto.Deportivo;*
-/
-Auto a= new Auto("Ford", 2000, TipoAuto.Deportivo);
+a.Tipo = TipoAuto.Deportivo;*/
+Auto a= new Auto(" Ford ", 2000, TipoAuto.Deportivo);
 Colectivo c=new Colectivo("Mercedes", 2010, 20);
 a.Imprimir();
 c.Imprimir();
