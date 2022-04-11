@@ -14,6 +14,7 @@ class Colectivo: Automotor
 {
     public int CantPasajeros;
 
+//override para que funcione el polimorfismo
     public override void Imprimir()   //ojo cuando completa porque pone el base que es del padre que no utlizaremos
     => Console.WriteLine($"{Marca} {Modelo} ({CantPasajeros} pasajeros)");
  
