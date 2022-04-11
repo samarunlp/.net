@@ -4,7 +4,9 @@ class Automotor{
    
    public string Marca = "";
    private int _modelo;
-   public int Modelo{
+   //public int Modelo{
+   //la codifique de manera distinta
+   public virtual int Modelo{
        get=> _modelo;
        set=> _modelo = (value < 2005) ? 2005 :value;
    }
