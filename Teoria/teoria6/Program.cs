@@ -11,5 +11,7 @@ c.CantPasajeros = 20;
 a.Tipo = TipoAuto.Deportivo;*/
 Auto a= new Auto(" Ford ", 2000, TipoAuto.Deportivo);
 Colectivo c=new Colectivo("Mercedes", 2010, 20);
-a.Imprimir();
-c.Imprimir();
+//a.Imprimir();
+//c.Imprimir(); 
+Console.WriteLine(a.Marca + " " + a.Modelo);
+Console.WriteLine(a.Marca + " " + a.Modelo);
