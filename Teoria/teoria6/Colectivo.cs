@@ -13,9 +13,12 @@ class Colectivo
 class Colectivo: Automotor
 {
     public int CantPasajeros;
-
+//public Colectivo():base(marca, modelo);
+    public Colectivo(String marca, int modelo, int cantPasajeros): base (marca, modelo){
+        this.CantPasajeros = cantPasajeros;
+     }
+     
 //override para que funcione el polimorfismo
-    public override void Imprimir()   //ojo cuando completa porque pone el base que es del padre que no utlizaremos
-    => Console.WriteLine($"{Marca} {Modelo} ({CantPasajeros} pasajeros)");
- 
- }
+    public override void Imprimir()
+    => Console.WriteLine($"{Marca} {Modelo} ({CantPasajeros} pasajeros)"); //si se ponen en privado en automotres sale error en marca y modelo; lo hereda pero no me deja referenciarlo
+}
