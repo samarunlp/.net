@@ -49,3 +49,15 @@ foreach(Empleado e in vector1)
 {
     e.Imprimir();
 }
+
+Pyme miPyme = new Pyme (new Empleado ("Juan"), 
+                        new Empleado("Adriana"),
+                        new Empleado("Diego"));
+/*
+//Error de compilacion, para poder usar el foreach deberia tener un metodo que se llama 'GetEnumerator',
+deberia haber una interfaz q lo devuelva. Para eso modifico "Pyme" con 'IEnumerable'
+*/
+foreach (Empleado e in miPyme)
+{
+    e.Imprimir();
+}
