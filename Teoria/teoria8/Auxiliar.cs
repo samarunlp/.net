@@ -10,13 +10,18 @@ class Auxiliar{
         Console.WriteLine(f(10));
         */
         int [] v = new int [] {11,5,90};
-        Aplicar(v, SumaDos);
+        FuncionEntera f= delegate(int n){
+            return n * 2;
+        };        
+        //Aplicar(v, SumaDos); se cambia por la linea de abajo
+        Aplicar(v, f);
         Imprimir(v);
-        Aplicar(v,SumaUno);
+        //Aplicar(v,SumaUno); se utliza la nueva funcion "FuncionEntera"
+        Aplicar(v, delegate(int n) { return n + 10;});// metodo anonimo, recibe y devuelve un entero
         Imprimir(v);
     }
-    int SumaUno(int n) => n+1;
-    int SumaDos(int n) => n+2;
+    //int SumaUno(int n) => n+1;
+    //int SumaDos(int n) => n+2;
 
     void Aplicar(int [] v, FuncionEntera f)
     {
