@@ -16,10 +16,12 @@ class Auxiliar{
             //return n * 2 + externa; se puede hacer la suma con variables externas a la funcion
         };        
         //Aplicar(v, SumaDos); se cambia por la linea de abajo
-        Aplicar(v, f);
+        //Aplicar(v, f);
+        Aplicar(v, n => n *2);
         Imprimir(v);
         //Aplicar(v,SumaUno); se utliza la nueva funcion "FuncionEntera"
-        Aplicar(v, delegate(int n) { return n + 10;});// metodo anonimo, recibe y devuelve un entero
+        //Aplicar(v, delegate(int n) { return n + 10;});// metodo anonimo, recibe y devuelve un entero
+        Aplicar(v, n => n +10);//En si mismo es un metodo
         Imprimir(v);
     }
     //int SumaUno(int n) => n+1;
