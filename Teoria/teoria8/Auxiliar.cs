@@ -10,8 +10,10 @@ class Auxiliar{
         Console.WriteLine(f(10));
         */
         int [] v = new int [] {11,5,90};
+        //int externa= 7;
         FuncionEntera f= delegate(int n){
             return n * 2;
+            //return n * 2 + externa; se puede hacer la suma con variables externas a la funcion
         };        
         //Aplicar(v, SumaDos); se cambia por la linea de abajo
         Aplicar(v, f);
