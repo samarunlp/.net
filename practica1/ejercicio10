@@ -2,3 +2,11 @@
 10. Escribir un programa que imprima en la consola todos los números que sean múltiplos de 17 o
 de 29 comprendidos entre 1 y 1000
 */
+System.Console.WriteLine("Multiplos de 17 o 29 son: ");
+int i;
+for (i= 0; i < 100;i++)
+{
+    if (i%17==0 || i%29==0 ){
+        System.Console.WriteLine(i);
+    }
+}
