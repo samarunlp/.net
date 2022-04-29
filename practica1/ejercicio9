@@ -4,3 +4,22 @@ con <ENTER>, y determinar si son simétricas (Ej: 'abbccd' y 'dccbba' son simét
 Tip: si st es un string, entonces st[0] devuelve el primer carácter de st, y st[st.Length-1]
 devuelve el último carácter de st.
 /*
+Console.WriteLine("Ingrese 2 palabras");
+string st=Console.ReadLine();
+string st1=Console.ReadLine();
+
+int i=0, j=1;
+while  (i < st[st.Length-1]) {
+    if( st[i] == st1[st1.Length-j]){
+       i++;
+       j++;
+    }
+    else
+      Console.WriteLine(" No son simetricas");
+      Console.WriteLine("Aprete enter");
+      Console.ReadKey();
+}
+if( i == st1[st1.Length-1]){
+   Console.WriteLine(" Son simetricas");
+}
+
