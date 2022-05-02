@@ -2,7 +2,18 @@ class Program
 {
     static void Main (string [] args) //vale tener un main "static void Main()" sin argumentos
     {
-        /*
+        /*Primera solucion
+        int a =17;
+        int b= 23;
+        Swap(ref a, ref b);
+        a= (int)o1; b= (int) o2;//boxing
+        Console.WriteLine($"a={a} y b={b}");
+        //sobrecarga del metodo swap
+        string st1= "hola";  string st2 = "mundo";
+        Swap(ref st1, ref st2);
+        Console.WriteLine($"st1={st1} y st2={st2}");
+        */
+         /*Segunda solucion
         object o1,o2;
         int a =17;
         int b= 23;
@@ -17,7 +28,8 @@ class Program
         st1=(string)o1; st2= (string)o2;
         Console.WriteLine($"st1={st1} y st2={st2}");
         */
-/*Al usarlo se pierden muchos chequeos y controles de seguridad; y realiza boxing por ej en b=17. No es buena solucion, la sobrecarga es "mejor"
+/*Tercera solucion
+Al usarlo se pierden muchos chequeos y controles de seguridad; y realiza boxing por ej en b=17. No es buena solucion, la sobrecarga es "mejor"
         dynamic a =17; 
         dynamic b= 23;
         Swap(ref a, ref b);
@@ -27,8 +39,12 @@ class Program
         Swap(ref st1, ref st2);
         Console.WriteLine($"st1={st1} y st2={st2}");
     }
-Para mejorar esto se utilizan los metos genericos*/
-/*//sobrecarga del metodo swap
+ */
+//Para mejorar esto se utilizan los metodos genericos
+
+
+
+/*sobrecarga del metodo swap
      static void Swap(ref int a, ref int b){
          int x=a;
          a=b;
