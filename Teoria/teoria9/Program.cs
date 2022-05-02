@@ -56,9 +56,15 @@ Al usarlo se pierden muchos chequeos y controles de seguridad; y realiza boxing 
          st2=aux;
      }*/
 
-//Si quiero usar esto, los parametros estan "mal" porque espera un entero o un string
+/*Si quiero usar esto, los parametros estan "mal" porque espera un entero o un string
      static void Swap(ref object i, ref object j){
          object aux=i;
+         i=j;
+         j=aux;
+     }*/
+    //metodo swap generico    
+     static void Swap <T>(ref T i, ref T j){
+         T aux=i; //no es un tipo real
          i=j;
          j=aux;
      }
