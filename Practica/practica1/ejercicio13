@@ -4,3 +4,8 @@
 y muestre el resultado en la consola (utilizar double.Parse(st) para obtener el valor 
 double a partir del string st.
 */
+double num=double.Parse(Console.ReadLine());
+double num1=double.Parse(Console.ReadLine());
+Console.Write("La suma de "+num+" y "+num1+" numeros reales es: ");
+Console.Write(num+num1);
+Console.ReadLine();
