@@ -1,3 +1,5 @@
+//LINQ es para tratar IEnumerables. Es una caracteristica de .net
+
 /*int [] vector = new int [] {1,2,3,4,5};
 IEnumerable<int> secuencia = vector.Select(n => n*3);//generalmente se los llamada secuencia porque estan en orden 
 */
