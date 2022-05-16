@@ -40,3 +40,7 @@ foreach (var grupo in agrupadas)
     Console.WriteLine($"Inicial: {grupo.Key}");
     grupo.ToList().ForEach(p => Console.WriteLine (" - " + p));
 }
+
+
+
+
