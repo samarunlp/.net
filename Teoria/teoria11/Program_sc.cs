@@ -14,3 +14,9 @@ void Mostrar<T>(IEnumerable<T> secuencia)
     }
     Console.WriteLine();
 }
+
+
+var personas = Persona.GetLista();
+personas.ForEach(p=> Console.WriteLine(p)); 
+Console.WriteLine();
+personas.Where(p => p.Edad >= 18).ToList().ForEach(p=> Console.WriteLine(p)); 
