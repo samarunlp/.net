@@ -20,3 +20,12 @@ void Mostrar<T>(IEnumerable<T> secuencia)
     }
     Console.WriteLine();
 }
+
+var personas = Persona.GetLista();
+personas.ForEach(p=> Console.WriteLine(p)); //el foreach es de la lista generica porque linq no tiene
+Console.WriteLine();
+personas.Where(p => p.Edad >= 18).ToList().ForEach(p=> Console.WriteLine(p)); //con el toList lo convierto en list<personas> y luego lista las personas mayores de edad
+
+/*
+.Select ( p => new {Nombre = p.nombre, Condicion = p.edad <18> "Menor" :"Mayor"}) crear objetos de un tipo anonimo, declara el nombre y utliza la condicion (creador ternario) para sacaber si es mayor de edad*/
+
