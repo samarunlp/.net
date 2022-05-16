@@ -17,6 +17,9 @@ void Mostrar<T>(IEnumerable<T> secuencia)
 
 
 var personas = Persona.GetLista();
-personas.ForEach(p=> Console.WriteLine(p)); 
-Console.WriteLine();
-personas.Where(p => p.Edad >= 18).ToList().ForEach(p=> Console.WriteLine(p)); 
+var agrupadas= personas.GroupBy(p => p.Nombre[0]).OrderByDescending(g => g.Key); 
+foreach (var grupo in agrupadas)
+{
+    Console.WriteLine($"Inicial: {grupo.Key}");
+    grupo.ToList().ForEach(p => Console.WriteLine (" - " + p));
+}
