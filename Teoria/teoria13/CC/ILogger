@@ -1,0 +1,4 @@
+namespace CalculoSimple;
+class ILogger{
+    
+}
