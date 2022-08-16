@@ -3,7 +3,7 @@ Investigar por las secuencias de escape \n, \t , \" y \\. Escribir un programa q
 utilice para imprimir distintos mensajes en la consola.
 */
 Console.WriteLine("Ejercicio 2 \n");
-Console.WriteLine("Asi bajo una linea \n"); //deja un renglon
+Console.WriteLine("Asi bajo una linea \n"); //deja un renglon, se mueve hacia abajo(como un enter)
 Console.WriteLine("\t Uso tabulacion horizontal \t "); //mueve para el costado
 //Ninguno de los 2 puede imprimirse sin la barra inversa
 Console.WriteLine("Comillas dobles \" "); //imprime solo las comillas
