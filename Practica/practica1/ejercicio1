@@ -2,10 +2,15 @@
 Escribir un programa que imprima en la consola la frase “Hola Mundo”
     haciendo una pausa entre palabra y palabra esperando a que el usuario 
     presione una tecla para continuar */
+//Una forma
 Console.WriteLine("Ejercicio 1 \n");
 Console.WriteLine("Hello ");
 Console.ReadKey();
 Console.WriteLine("");
 Console.WriteLine("Mundo");
-
 Console.WriteLine("\n");
+
+//Otra forma
+Console.Write("Hola");
+Console.ReadKey();//dependiendo que tecla apreta tmb se imprime (recomendable apretar el espacio)
+Console.Write("Mundo");
