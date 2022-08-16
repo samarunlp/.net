@@ -3,9 +3,12 @@
 consola un saludo personalizado utilizando ese nombre o la frase “Hola mundo” si el 
 usuario ingresó una línea en blanco. Para ingresar un string desde el teclado utilizar
 Console.ReadLine()*/
+
 Console.WriteLine("Ejercicio 4 \n");
 Console.WriteLine("Ingrese su nombre");
 String nombre =Console.ReadLine();
+
+//Una manera
 if (nombre != ""){
     Console.WriteLine("Hola " + nombre);
 }
@@ -14,3 +17,7 @@ else {
 }
 Console.WriteLine("\n");
 /*
+
+//Otra manera es usando el operador condicional ternario
+st= (st == "") ? "Hola Mundo" : "Hola " + st;
+Console.Write(st);
