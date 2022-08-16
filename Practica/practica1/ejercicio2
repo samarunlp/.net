@@ -7,4 +7,4 @@ Console.WriteLine("Asi bajo una linea \n"); //deja un renglon, se mueve hacia ab
 Console.WriteLine("\t Uso tabulacion horizontal \t "); //mueve para el costado
 //Ninguno de los 2 puede imprimirse sin la barra inversa
 Console.WriteLine("Comillas dobles \" "); //imprime solo las comillas
-Console.WriteLine("Barra diagonal inversa \\" ); //imprime solo las barras invertidas
+Console.WriteLine("Barra diagonal inversa \\" ); //imprime solo la barra invertida
