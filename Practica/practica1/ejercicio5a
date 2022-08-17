@@ -6,7 +6,7 @@ En otro caso, debe imprimir “Buen día ” seguido del nombre ingresado o “�
 si se ha ingresado una línea vacía.
 a) utilizando if ... else if.
 */
-Console.WriteLine("Ejercicio 5 a) \n");
+//Console.WriteLine("Ejercicio 5 a) \n");
 Console.WriteLine("Ingrese su nombre");
 String nombre01 =Console.ReadLine();
 if (nombre == " Juan"){
@@ -23,4 +23,4 @@ else if( nombre01 == ""){
    }
    else 
      Console.WriteLine("Buen día " + nombre01);
-Console.WriteLine("\n");
+//Console.WriteLine("\n");
