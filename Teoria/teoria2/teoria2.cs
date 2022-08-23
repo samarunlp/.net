@@ -123,7 +123,7 @@ Console.WriteLine((int)obj + 1); //conversion explicita del contenido de la vari
     Console.WriteLine(o is int); //true
 }
 
-
+//Comparaciones distintas--> saber si una variable es de tipo de referencia o de valor porque la compracion sera de direcciones de memoria o del contenido
 //MISMOS EJEMPLOS, UNO DA FALSO Y EL OTRO VERDADERO(LA SEGUNDA VEZ QUE IMPRIME)
 //VERDADERO, FALSO
 {
