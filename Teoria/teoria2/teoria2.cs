@@ -84,9 +84,13 @@ Console.WriteLine((int)obj + 1); //conversion explicita del contenido de la vari
 //gracias al signo(?) en los primeros 2 no tira error.
 }
 
-//Tener cuidado a la hora de imprimir
+//Tener cuidado a la hora de imprimir,se le asigna un valor si no lo tiene o null, depende si es por referencia o por valor.
 {
     int var1;
+    int var2 = 17;
+    double var3 = 1.5;
+    object obj1;
+    object? obj2 = null;
     Console.WriteLine(var1); //No va a imprimir porque no tiene ningun valor asignado, tira error de compilacion
 }
 
