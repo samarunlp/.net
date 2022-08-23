@@ -124,8 +124,6 @@ Console.WriteLine((int)obj + 1); //conversion explicita del contenido de la vari
 }
 
 //Comparaciones distintas--> saber si una variable es de tipo de referencia o de valor porque la compracion sera de direcciones de memoria o del contenido
-//MISMOS EJEMPLOS, UNO DA FALSO Y EL OTRO VERDADERO(LA SEGUNDA VEZ QUE IMPRIME)
-//VERDADERO, FALSO
 {
     char c1='A';
     char c2= 'A';
@@ -134,8 +132,12 @@ Console.WriteLine((int)obj + 1); //conversion explicita del contenido de la vari
     object o2= 'A'; 
     /*Console.WriteLine(o1==o2); /*False, porque es un objeto que tienen una direccion de 
     memoria, no compara el contenido sino la secuencia de bit*/
+    
+    /*LO QUE IMPRIME
+    True
+    False
+    */
 }
-//VERDADERO, VERDADERO
 {
     char c1='A';
     char c2= c1;
@@ -143,4 +145,25 @@ Console.WriteLine((int)obj + 1); //conversion explicita del contenido de la vari
     object o1= 'A';
     object o2= o1;  
     //Console.WriteLine(o1==o2); //True (Apuntan al mismo objeto)
+    
+    /*LO QUE IMPRIME
+    True
+    True
+    */
+}
+{
+    //ejemplo con un vector
+    char c1 = 'A';
+    char c2 = c1; //se copia el valor 'A'
+    c1 = 'B';
+    Console.WriteLine("c1=" + c1 + " y c2=" + c2); 
+    char[] v1 = new char[] {'A'};
+    char[] v2 = v1; //se copia la referencia, es el mismo puntero
+    v1[0] = 'B'; //por eso cuando se modifica v1,cambia v2
+    Console.WriteLine("v1[0]=" + v1[0] + " y v2[0]=" +  v2[0]);
+    
+    /*LO QUE IMPRIME
+    cc1=B y c2=A
+    v1[0]=B y v2[0]=B
+    */
 }
