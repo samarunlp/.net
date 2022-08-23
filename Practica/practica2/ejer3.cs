@@ -6,3 +6,7 @@ while (i <= 10);
 {
 sum += i++;
 }
+
+/*
+Después del parentesis del while no va el ";" porque se queda en un bucle infito
+*/
