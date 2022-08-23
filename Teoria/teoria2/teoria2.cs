@@ -167,3 +167,4 @@ Console.WriteLine((int)obj + 1); //conversion explicita del contenido de la vari
     v1[0]=B y v2[0]=B
     */
 }
+
