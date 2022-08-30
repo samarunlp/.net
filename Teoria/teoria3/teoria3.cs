@@ -25,6 +25,16 @@ Console.WriteLine("Rodondeo un real, ejemplo: "+ r);
 Console.WriteLine($"Valor = {r:0.0}"); //dps del punto la cantidad de decimales
 Console.WriteLine($"Valor = {r:0.00}");
 
+Console.WriteLine("Ejemplo máscara de formatos para DateTime");
+DateTime fecha = new DateTime(1492,10,12,15,5,6,325);
+Console.WriteLine("a) {0}", fecha);
+Console.WriteLine("b) {0:d}", fecha); // le pide la forma corta con d 
+Console.WriteLine("c) {0:D}", fecha); // le pide la forma larga con D
+Console.WriteLine($"d) {fecha:dddd d 'del mes de' MMMM 'del año' yyyy}"); // dddd es el dia de la semana, d es el numero pero con 1 cifra, 
+/*dd es el numero pero con 2 cifras, MMMM le pido el nombre completo del mes, MMM oct, MM 10, MM 10 porq justo es octubre sino si fuera marzo seria 03*/
+Console.WriteLine($"e) {fecha:t}");
+Console.WriteLine("f) {0:hh:mm:s fff}",fecha); //hh 2 cifras, h una cifra de la hora; mm 2 cifras, m una cifra de minuto;s una cifra de segundos; ffff milisegundos
+
 Console.WriteLine("-------------------");
 Console.WriteLine("Imprimir una lista");
 List<int> lista= new List<int>(){10,20,30,40};
