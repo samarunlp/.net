@@ -1,15 +1,15 @@
 // See https://aka.ms/new-console-template for more information
 string marca= "Ford";
 int modelo = 2000;
-Console.WriteLine("Primera forma ");
+Console.WriteLine("Primera forma "); //Strings que normalmente utilizamos
 Console.WriteLine(" Es un "+ marca+ " año "+ modelo);
 //mejora
 string st;
-Console.WriteLine( "Segunda forma ");
+Console.WriteLine( "Segunda forma ");// Strings de formato compuesto
 st= string.Format( " Es un {0} año {1}", marca, modelo);//cadenas de formato compuesto, indica no solo donde va sino que se le puede escribir info
 Console.WriteLine(st);
-Console.WriteLine( "Tercera forma ");
-st= string.Format( $" Es un {marca} año {modelo}"); //interpolacion de string, con el signo peso entiende que es una marca de formato  
+Console.WriteLine( "Tercera forma ");// 
+st= string.Format( $" Es un {marca} año {modelo}"); //interpolacion de string, con el signo peso entiende que es una marca de formato. Puede ponerse literales(int o una division)
 Console.WriteLine(st);
 
 Console.WriteLine("-------------------");
