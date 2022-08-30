@@ -53,13 +53,36 @@ for(int i=0; i<lista.Count; i++){
 Console.WriteLine();
 Console.WriteLine("-------------------");
 double[]? vector1=new double [10];
-Procesar(vector1,1,1);
-void Procesar(double []? v, int i, int c)
+/*void Procesar(double []? v, int i, int c)
 {
     c=c+10;
-    v[i]=1000/c;//1000/11=90,90990909090
+    v[i]=1000/c;//1000/11=90,90990909090  --> se va del rango del vector entonces no sirve este proceso
     Console.WriteLine(v[i]);
+}*/
+//mejor manera de arregarlo sera con try...catch
+void Procesar(double[]? v, int i, int c)
+{
+try
+    {
+        c = c + 10;
+        v[i] = 1000 / c;
+        Console.WriteLine(v[i]);
+    }
+/*catch 
+    {
+        Console.WriteLine("No procesado");
+    }   */ 
+ catch (Exception e) //si quiero saber cual fue la excepcion(errores en tiempo de ejecucion) por la que no funciono
+    {
+        Console.WriteLine(e.Message); //el mensaje se codificara en otro lado
+    }   
 }
+
+Procesar(vector1,1,1);
+Procesar(vector, 10, 1);
+Procesar(vector, -1, 1);
+Procesar(vector, 1, -10);
+Procesar(vector, 1, 1);
 Console.WriteLine("-------------------");
 
 
