@@ -35,6 +35,8 @@ Console.WriteLine($"d) {fecha:dddd d 'del mes de' MMMM 'del año' yyyy}"); // dd
 Console.WriteLine($"e) {fecha:t}");
 Console.WriteLine("f) {0:hh:mm:s fff}",fecha); //hh 2 cifras, h una cifra de la hora; mm 2 cifras, m una cifra de minuto;s una cifra de segundos; ffff milisegundos
 
+//Copiar vectores diapo 43
+
 Console.WriteLine("-------------------");
 Console.WriteLine("Imprimir una lista");
 List<int> lista= new List<int>(){10,20,30,40};
