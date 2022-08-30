@@ -44,7 +44,7 @@ lista.Remove(30);//borra el elemento que ingreso entre parentesis y si hay 2 igu
 lista.RemoveAt(1);//borra el elemento que se encuentra en la posicion que ingreso entre parentesis, ej 20
 lista.Insert(2,22);//insertar en la posicion el elemento tal, ej en la posicion 2 poner el 22
 lista.Add(55);//Agrega a lo último el 55
-int[] vector=new int []{31,32,33};
+int[] vector=new int []{31,32,33}; //agregar una coleccion de elementos
 lista.InsertRange(3,vector);//a partir de la posicion 3 agrega esos 3 elementos
 for(int i=0; i<lista.Count; i++){
     Console.WriteLine(lista[i] );//imprime uno bajo del otro.
